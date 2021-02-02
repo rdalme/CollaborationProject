@@ -2,7 +2,7 @@
 
 #include <FastLED.h>
 
-#define NUM_STRIPS 20  // 2 strips connected
+#define NUM_STRIPS 2 // 2 strips connected
 #define NUM_LEDS_PER_STRIP 4  // 4 LEDs per strip
 CRGB leds[NUM_STRIPS][NUM_LEDS_PER_STRIP];
 
