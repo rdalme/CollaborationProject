@@ -21,7 +21,7 @@ void loop() {
   for (int x = 0; x < NUM_STRIPS; x++) {
     // This inner loop will go over each led in the current strip, one at a time
     for (int i = 0; i < NUM_LEDS_PER_STRIP; i++) {
-      leds[x][i] = CRGB::Red;  // Purple
+      leds[x][i] = CRGB::Purple;  // Purple
       FastLED.show();
       leds[x][i] = CRGB::Black;
       delay(1000);  // 100 ms delay
