@@ -3,9 +3,11 @@
 This project will give you experience with creating and resolving Issues using GitHub.
 
 Step 1: Fork the forking project already.
+
   On Github.com, click the Fork button to add a copy of the repository to your account.
   
 Step 2: Clone the Project
+
   Clone the project to a local directory using Git Bash.
   
   git clone <repo url> <project folder>
