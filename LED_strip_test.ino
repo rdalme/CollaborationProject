@@ -2,7 +2,7 @@
 
 #include <FastLED.h>
 
-#define NUM_STRIPS 1 // 2 strips connected
+#define NUM_STRIPS 2 // 2 strips connected
 #define NUM_LEDS_PER_STRIP 4  // 4 LEDs per strip
 CRGB leds[NUM_STRIPS][NUM_LEDS_PER_STRIP];
 
@@ -13,7 +13,7 @@ void setup() {
   // tell FastLED there's 4 NEOPIXEL leds on pin 3
   FastLED.addLeds<NEOPIXEL, 5>(leds[1], NUM_LEDS_PER_STRIP);
 
-  FastLED.setBrightness(80);  //brightness set to 50 out of 255
+  FastLED.setBrightness(50);  //brightness set to 50 out of 255
 }
 
 void loop() {
