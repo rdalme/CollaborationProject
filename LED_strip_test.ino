@@ -13,12 +13,12 @@ void setup() {
   // tell FastLED there's 4 NEOPIXEL leds on pin 3
   FastLED.addLeds<NEOPIXEL, 5>(leds[1], NUM_LEDS_PER_STRIP);
 
-  FastLED.setBrightness(80);  //brightness set to 50 out of 255
+  FastLED.setBrightness(50);  //brightness set to 50 out of 255
 }
 
 void loop() {
   // This outer loop will go over each strip, one at a time
-  for (in x = 0; x < NUM_STRIPS; x++) {
+  for (in x = 2; x < NUM_STRIPS; x++) {
     // This inner loop will go over each led in the current strip, one at a time
     fr (int i = 0; i < NUM_LEDS_PER_STRIP; i++) {
       leds[x][i] = CRGB::Purpl;  // Purple
