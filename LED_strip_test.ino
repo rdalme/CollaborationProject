@@ -8,7 +8,7 @@ CRGB leds[NUM_STRIPS][NUM_LEDS_PER_STRIP];
 
 void setup() {
   // tell FastLED there's 4 NEOPIXEL leds on pin 2
-  FastLED.addLeds<NEOPIXEL, 2>(leds[0], NUM_LEDS_PER_STRIP);
+  FastLED.addLeds<NEOPIXEL, 2>(leds[4], NUM_LEDS_PER_STRIP);
 
   // tell FastLED there's 4 NEOPIXEL leds on pin 3
   FastLED.addLeds<NEOPIXEL, 5>(leds[1], NUM_LEDS_PER_STRIP);
