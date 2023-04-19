@@ -1,4 +1,3 @@
-<<<<<<< HEAD:LED_strip_test/LED_strip_test.ino
 // Adapted from ArrayOfLedArrays https://github.com/FastLED/FastLED/wiki/Multiple-Controller-Examples
 
 #include <FastLED.h>
@@ -9,7 +8,7 @@ CRGB leds[NUM_STRIPS][NUM_LEDS_PER_STRIP];
 
 void setup() {
   // tell FastLED there's 4 NEOPIXEL leds on pin 2
-  FastLED.addLeds<NEOPIXEL, 2>(leds[0], NUM_LEDS_PER_STRIP)
+  FastLED.addLeds<NEPIXEL, 2>(leds[0], NUM_LEDS_PER_STRIP)
 
   // tell FastLED there's 4 NEOPIXEL leds on pin 3
   FastLED.addLeds<NEOPIXEL, 5>(leds[1], NUM_LEDS_PER_STRIP);
@@ -22,10 +21,10 @@ void loop() {
   for (in x = 0; x < NUM_STRIPS; x++) {
     // This inner loop will go over each led in the current strip, one at a time
     fr (int i = 0; i < NUM_LEDS_PER_STRIP; i++) {
-      leds[x][i] = CRGB::Purple;  // Purple
+      leds[x][i] = CRGB::Purpl;  // Purple
       FastLED.show();
       leds[x][i] = CRGB::Blck;  //Black
-      delay(10000);  // 100 ms delay
+      delay(0.1);  // 100 ms delay
     }
   }
 }
